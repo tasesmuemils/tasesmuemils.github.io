@@ -1,0 +1,138 @@
+* {
+  /border: 1px solid red;
+  font-family: 'Varela Round', sans-serif;
+}
+
+nav a {
+  font-size: 25px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(255,255,255);
+}
+
+.logo {
+  font-size: 35px;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.header {
+  background-image: url("../images/first_2.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.first-part h1 {
+  font-size: 60px;
+  padding-top: 230px;
+  padding-bottom: 20px;
+}
+
+.first-part h3 {
+  padding-bottom: 220px;
+}
+
+.intro {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.intro h2 {
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+
+.intro p {
+  font-size: 25px;
+}
+
+.profPicWrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.profile-pic {
+  height: 250px;
+  width: 250px;
+  border-width: 15px;
+}
+
+.skills {
+  padding-top: 20px;
+}
+
+.progLang {
+  color: #132F3B;
+}
+
+.socIcons {
+  color: #E27362;
+}
+
+.projects {
+  background-color: #E27362;
+}
+
+.projects-container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.projects h2 {
+  font-size: 40px;
+  padding-bottom: 60px;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #132F3B;
+}
+
+.card-pad {
+  padding-bottom: 20px;
+}
+
+.contact-form {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.contact-form h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.btn {
+  background-color: #E27362;
+}
+
+.footer {
+  background-color: #132F3B;
+}
+
+.footer-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.fa-instagram:hover {
+  color: #fccc63;
+}
+
+.fa-github-square:hover {
+  color: white;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
