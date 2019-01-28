@@ -399,6 +399,10 @@ select {
     .card img {
         height: 280px;
     }
+    
+    #formModal {
+        top: 0;
+    }
 
     #formContent {
         display: grid;
