@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="mainTitle">
+            <h1>GAME LIST</h1>
+            <h3>Check games of different consoles</h3>
+        </div>
+        <div id="contentHeader">
+            <h1>Games list</h1>
+            <button type="button" id="formButton">ADD NEW GAME</button>
+        </div>
+        <div id="formModal">
+            <span id="closeModal"><i class="fas fa-window-close fa-2x"></i></span>
+            <div id="formWrapper">
+                <form action="" id="formContent">
+                    <h1>Product Add</h1>
+                    <label for="productID">Product ID: </label>
+                    <input type="number" name="productID" id="productID">
+                    <label for="consoleType">Choose console type: </label>
+                    <select name="consoleType" id="consoleType">
+                        <option value="Multiple consoles">Multiple consoles</option>
+                        <option value="PlayStation">PlayStation</option>
+                        <option value="Xbox">Xbox</option>
+                        <option value="Nintendo">Nintendo</option>
+                    </select>
+                    <label for="productName">Name: </label>
+                    <input type="text" name="productName" id="productName">
+                    <label for="productImg">Product image (only url): </label>
+                    <input type="text" name="productImg" id="productImg">
+                    <label for="productPrice">Price:</label>
+                    <input type="text" name="productPrice" id="productPrice">
+                    <button type="button" id="addGameButton">ADD GAME</button>
+                </form>
+            </div>
+        </div>
+        <div id="contentProducts">
+            <!-- Here goes tamplate from JS(using TEMPLATE STRINGS)-->
+        </div>
+        <footer class="footer">
+            <h4>CREATED BY EB</h4>
+            <a href="https://twitter.com/tasesmuemils" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
