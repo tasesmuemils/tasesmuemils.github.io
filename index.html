@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Box shadow generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
+</head>
+
+<body>
+    <!--WRAPPER-->
+    <div class="wrapper">
+        <div class="content">
+            <h1>Box Shadow generator</h1>
+            <div id="tool">
+
+                <!--SLIDER COLUMN-->
+                <div class="column optionsColumn">
+                    <div class="optionContainer">
+                        <div id="horozintal">
+                            <div class="row">
+                                <p>Horizontal Length</p>
+                                <div class="textInput">
+                                    <input type="text" class="pixelsInput" value="0">
+                                    <label>xp</label>
+                                </div>
+                            </div>
+                            <input type="range" class="slider result" name="horizontal--spacing" min="-200" max="200" value="0"
+                                data-sizing="px" step="1">
+                        </div>
+                        <div id="vertical">
+                            <div class="row">
+                                <label>Vertical Length</label>
+                                <div class="textInput">
+                                    <input type="text" class="pixelsInput" placeholder="0">
+                                    <label>xp</label>
+                                </div>
+                            </div>
+                            <input type="range" class="slider result" name="vertical--spacing" min="-200" max="200" value="0"
+                                data-sizing="px">
+                        </div>
+                    </div>
+                    <div class="optionContainer">
+                        <div id="blur">
+                            <div class="row">
+                                <label>Blur Radius</label>
+                                <div class="textInput">
+                                    <input type="text" class="pixelsInput" placeholder="0">
+                                    <label>xp</label>
+                                </div>
+                            </div>
+                            <input type="range" class="slider result" name="blur--radius" min="0" max="300" value="0"
+                                data-sizing="px">
+                        </div>
+                        <div id="spread">
+                            <div class="row">
+                                <label>Spread Radius</label>
+                                <div class="textInput">
+                                    <input type="text" class="pixelsInput" placeholder="0">
+                                    <label>xp</label>
+                                </div>
+                            </div>
+                            <input type="range" class="slider result" name="spread--radius" min="-200" max="200" value="0"
+                                data-sizing="px">
+                        </div>
+                    </div>
+
+                    <div class="optionContainer">
+                        <div id="shadowColor">
+                            <div class="row">
+                                <label>Shadow Color</label>
+                                <div class="color">
+                                    <input class='result' type="color" name="box--shadow--color" placeholder="#000000">
+                                    <input type="text" class="colorInput" value="#000000">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="backgroundColor">
+                            <div class="row">
+                                <label>Background Color</label>
+                                <div class="color">
+                                    <input type="color" class='result' name="box--bg--color" value="#ff9c9c">
+                                    <input type="text" class="colorInput" value="#ff9c9c">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="boxColor">
+                            <div class="row">
+                                <label>Box Color</label>
+                                <div class="color">
+                                    <input type="color" class='result' name="box--color" value="#ffd000">
+                                    <input type="text" class="colorInput" value="#ffd000">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="opacity">
+                            <div class="row">
+                                <label>Opacity</label>
+                                <div class="textInput">
+                                    <input type="text" class="pixelsInput" value="1">
+                                </div>
+                            </div>
+                            <input type="range" class="slider result" name="opacity" min="0" max="1" step=".01" value="1">
+                        </div>
+                    </div>
+                </div>
+                <!--SLIDER COLUMN END-->
+
+                <!--SHADOW BOX COLUMN-->
+                <div class="column boxColumn">
+                    <div class="box-shadow-object">
+                        <div>
+                            <p id="copyCSScode">box-shadow: 0xp 0px 0px 0px rgba(0,0,0, 1);</p>
+                        </div>
+                    </div>
+                </div>
+                <!--SHADOW BOX COLUMN END-->
+                
+
+            </div>
+
+        </div>
+    </div>
+    <!--WRAPPER END-->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
