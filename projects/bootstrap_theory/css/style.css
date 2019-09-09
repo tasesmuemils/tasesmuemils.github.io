@@ -1,0 +1,167 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    padding: 20px 10px 20px 10px;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: #a6a5a5;
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.header {
+    padding: 70px 10px 120px 10px;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-family: 'Raleway';
+}
+
+.header p {
+    color: #a6a5a5;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.intro {
+    background-color: white;
+    padding: 90px 10px 90px 10px;
+    color:#a6a5a5;
+}
+
+.intro h2 {
+    color: #70a4ff;
+    font-size: 22px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.intro p {
+    line-height: 25px;
+}
+
+.article {
+    padding: 0 40px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.middle {
+    border-left: solid 1px rgb(211, 211, 211);
+    border-right: solid 1px rgb(211, 211, 211);
+}
+
+.intro button {
+    padding: 5px 20px;
+    background-color: #70a4ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.profiles {
+    background-color: #70a4ff;
+    padding: 100px 0;
+    margin: 0;
+}
+
+.profiles-title p {
+    padding-bottom: 60px;
+    color: #fcf3f3;
+}
+
+.profile-card {
+    border: solid 1px rgb(211, 211, 211);
+    padding: 40px 0px;
+    margin: 10px;
+}
+
+.profiles img {
+    border-radius: 100px;
+}
+
+.profiles h3 {
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.profiles p {
+    font-size: 14px;
+    color: #fcf3f3;
+}
+
+.about {
+    background-color: white;
+    color: grey;
+}
+
+.about-title {
+    padding: 100px 0px 40px 0px;
+}
+
+.about-title h1 {
+    color: #70a4ff;
+}
+
+.about-title p {
+    font-size: 14px;
+}
+
+.about-cards {
+   padding-bottom: 60px;
+   margin: 10px;
+}
+
+
+
+.about-cards h3 {
+    color: #70a4ff;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.about-cards p {
+    font-size: 14px;
+}
+
+.about-cards button {
+    padding: 5px 20px;
+    background-color: #70a4ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.footer h6 {
+    color: #d2d2d2;
+    font-size: 12px;
+}

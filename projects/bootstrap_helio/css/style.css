@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    //border: solid 1px red;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    background-image: url(../img/slide03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    padding: 30px 25px;
+}
+
+.navbar a {
+    color: white;
+    font-size: 14px;
+}
+
+.intro {
+    padding: 50px 0px 150px 0px;
+}
+
+.intro p {
+    color: #c9c9c9;
+    letter-spacing: 3px;
+}
+
+
+.intro h1 {
+    font-size: 90px;
+}
+
+.articles {
+    background-color: #f5f5f5;
+    padding: 50px 0px 100px 0px;
+}
+
+
+
+.article-card {
+    background-color: white;
+    color: #b9b9b9;
+    padding-bottom: 20px;
+    margin-bottom: 20px; 
+}
+
+
+.article-card h6 {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    font-size: 10px;
+    padding: 30px 0px 10px 0px;
+}
+
+.article-card h3 {
+    color: black;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 15px;
+   font-weight: lighter;
+   word-spacing: 2px; 
+   padding: 15px 40px;
+}
+
+.article-card button {
+    background-color: white;
+    color: black;
+    border: solid 2px #c9c9c9;
+    padding: 5px 10px;
+}
+
+.quote p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    padding: 50px 0px 0px 0px;
+    color: #b9b9b9;
+}
+
+.quote h3 {
+    padding: 0px 0px 50px 0px;
+}
+
+.pictures {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+
+.pictures p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    padding: 50px 0px 0px 0px;
+    color: #b9b9b9;
+}
+
+.pictures h3 {
+    padding-bottom: 20px;
+}
+
+.image-frames {
+    padding-bottom: 15px;
+}
+
+.pictures img {
+    border: solid 15px white;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color: black;
+    padding: 100px 0px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #b9b9b9;
+}
