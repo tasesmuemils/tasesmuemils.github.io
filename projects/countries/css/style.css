@@ -1,0 +1,96 @@
+/*Style for Countries*/
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Hepta Slab', serif;
+}
+
+/*MAIN*/
+.wrapper {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    background-color: #28283d;
+    color: white;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+/*MAIN END*/
+
+/*DROPWDOWN*/
+.dropdown {
+    justify-self: center;
+    margin: 30px 0;
+}
+
+.dropdown select {
+    border: 2px solid #52526e;
+    border-radius: 20px;
+    outline: none;
+    background-color: #28283d;
+    font-family: 'Hepta Slab', serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+/*DROPWDOWN END*/
+
+/*FLIP CARD*/
+.flip-card {
+    position: relative;
+    margin: 30px;
+    transition: all 0.7s;
+    perspective: 2000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    background: #1b1b26;
+    color: white;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: grid;
+    align-content: center;
+}
+
+.flip-card img {
+    display: block;
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.flip-card-back p {
+    font-size: 25px;
+    padding: 10px;
+}
+
+/*FLIPCARD END*/
+

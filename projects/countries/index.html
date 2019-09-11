@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        Created by Emils Bisenieks 2019
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Countries info</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="title">
+                <h1>Choose your country...</h1>
+            </div>
+            <div class="dropdown">
+                <select name="Select country" id="coutriesList" aria-placeholder="select country">
+                    <option value="" disabled selected hidden>Select country</option>
+                </select>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" id="flagImage">
+                    </div>
+                    <div class="flip-card-back" id="countryInfo">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
