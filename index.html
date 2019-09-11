@@ -4,17 +4,20 @@
 <head>
     <!--Portfolio build by Emils Bisenieks 2019-->
     <!--HTML, CSS GRID-->
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147448729-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-147448729-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147448729-1');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -34,7 +37,9 @@
                     <div class="navigation-bar">
                         <h3>Emils Bisenieks</h3>
                         <ul>
-                            <a href="#contact-section"><li class="nav-button">Say Hello</li></a>
+                            <a href="#contact-section">
+                                <li class="nav-button">Say Hello</li>
+                            </a>
                         </ul>
                     </div>
                     <div class="header-intro">
@@ -238,6 +243,22 @@
                                 </div>
                             </figure>
                         </div>
+
+                        <div class="project-card">
+                            <figure class="project-card-content">
+                                <img src="img/project_9.PNG" alt="">
+                                <div class="hover-content">
+                                    <div class="hover-content-wrapper">
+                                        <h1>Countries API</h1>
+                                        <h2>HTML, CSS, Javascript (fetch API)</h2>
+                                        <a href="projects/countries/index.html" target="_blank"><button
+                                                class="button-design project-buton">Check it out <span><i
+                                                        class="fas fa-chevron-right fa-xs"></i></span></button></a>
+                                    </div>
+                                </div>
+                            </figure>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -268,14 +289,16 @@
                     <h2>Research is creating new knowledge</h2>
                     <div class="social-links">
                         <figure>
-                            <a href="https://github.com/tasesmuemils" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://github.com/tasesmuemils" target="_blank"><i
+                                    class="fab fa-github fa-2x"></i></a>
                         </figure>
                         <figure>
                             <a href="http://www.linkedin.com/in/emīls-bisenieks-3277a6115" target="_blank"><i
                                     class="fab fa-linkedin-in fa-2x"></i></a>
                         </figure>
                         <figure>
-                            <a href="https://twitter.com/tasesmuemils" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://twitter.com/tasesmuemils" target="_blank"><i
+                                    class="fab fa-twitter fa-2x"></i></a>
                         </figure>
                     </div>
                     <h5>Portfolio template made by Emils Bisenieks</h5>
