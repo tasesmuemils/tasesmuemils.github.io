@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Pokemon app by Emils Bisesnieks 2019
+Data: PokeAPI
+First time creating filters, sorting, searching with Vanilla JS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Monda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Turret+Road:800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pokemon app</title>
+</head>
+
+<body>
+    <!--MAIN WRAPPER-->
+    <div class="wrapper">
+
+        <!--LOADER-->
+        <div class="page-loader-wrapper">
+            <div class="loader-content">
+                <figure id="logo-wrapper">
+                    <img src="img/logo.png" alt="">
+                </figure>
+                <h2 id="randomFact"></h2>
+            </div>
+            <div class="loader-wrapper">
+                <div id="page-loader">
+                </div>
+            </div>
+        </div>
+        <!--LOADER END-->
+
+        <!--MODAL-->
+        <div id="modal">
+
+        </div>
+        <!--MODAL END-->
+
+        <!--CONTENT WRAPPER-->
+        <div class="wrapper-content">
+
+            <!--HEADER-->
+            <section class="header">
+                <div class="header-title">
+                    <h1>Pokedex</h1>
+                    <h3>Check info about 1. generation Pokemon's</h3>
+                </div>
+                <div class="search-sort-wrapper">
+                    <div class="search-bar">
+                        <label for="search-bar">Find pokemon:</label>
+                        <input type="text" id="searchBar">
+                    </div>
+                    <div class="sort-wrapper">
+                        <select name="sort" id="sortOptions">
+                            <option value="" disabled selected>Sort results by...</option>
+                            <option value="">A-Z</option>
+                            <option value="">Z-A</option>
+                            <option value="">Lowest number (first)</option>
+                            <option value="">Highest number (first)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filters-wrapper">
+                    <button class="filterButton" id="filterButtonAll">All</button>
+                    <button class="filterButton">Grass</button>
+                    <button class="filterButton">Water</button>
+                    <button class="filterButton">Fire</button>
+                    <button class="filterButton">Electric</button>
+                    <button class="filterButton">Rock</button>
+                    <button class="filterButton">Flying</button>
+                    <button class="filterButton">Rock</button>
+                    <button class="filterButton">Ground</button>
+                    <button class="filterButton">Psychic</button>
+                    <button class="filterButton">Dragon</button>
+                    <button class="filterButton">Bug</button>
+                    <button class="filterButton">Normal</button>
+                    <button class="filterButton">Fairy</button>
+                    <button class="filterButton">Fighting</button>
+                    <button class="filterButton">Poison</button>
+                    <button class="filterButton">Ghost</button>
+                    <button class="filterButton">Ice</button>
+                    <button class="filterButton">Steel</button>
+                </div>
+
+            </section>
+            <!--HEADER END-->
+
+            <!--POKEMON LIST-->
+            <ul class="pokemon-list" id="pokemonList">
+
+            </ul>
+            <!--POKEMON LIST-->
+        </div>
+        <!--CONTENT WRAPPER END-->
+    </div>
+    <!--MAIN WRAPPER-->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
