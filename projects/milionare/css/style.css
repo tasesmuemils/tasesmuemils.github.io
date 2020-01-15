@@ -1,0 +1,342 @@
+/* Who Wants to Be a Millionaire?
+Created by Emils Bisenieks 2020 */
+
+/*MAIN*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    /* border: 1px solid red; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #332B53;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    color: #ffffff;
+}
+
+img {
+    height: 400px;
+    width: 400px;
+}
+
+/*MAIN END*/
+
+/*WINNER*/
+.winner {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.winner * {
+    font-size: 35px;
+}
+
+/*WINNER END*/
+
+/*CONTROLS*/
+.controls {
+    display: grid;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.btn {
+    border: none;
+    background-color: #6660AC;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    border: none;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 0 37px 20px -20px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -5px);
+}
+
+#help-options .btn,
+.timer-wrapper .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.timer-wrapper .btn {
+    width: 120px;
+    justify-self: center;
+    margin: 10px 10px 30px 30px;
+    padding: 5px 5px;
+}
+
+/*CONTROLS END*/
+
+/*RULES*/
+.rules-style {
+    color: #ffffff;
+}
+
+.rules-style li {
+    list-style-type: none;
+}
+
+.rules-style h2 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.rules-style li {
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+/*RULES END*/
+
+/*TABLE*/
+.result-table-style {
+    border: 1px solid white;
+    padding: 10px 80px;
+}
+
+.result-table-style .highlight-prize {
+    color: white;
+}
+
+.table-item {
+    display: flex;
+}
+
+.table-item * {
+    padding: 5px;
+    color: #CE7034;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.current-question {
+    background-color: #CE7034;
+}
+
+.current-question p {
+    color: white;
+}
+
+/*TABLE END*/
+
+/*QUESTION AND ANSWERS*/
+
+.question-container {
+    display: grid;
+    text-align: center;
+}
+
+#child-question td:nth-child(1) {
+    color: #332B53;
+}
+
+#question-type {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#help-options {
+    padding: 10px 0 20px 0;
+}
+
+#question {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#answer-buttons button {
+    margin: 20px;
+    font-weight: bold;
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-button-wrapper {
+    display: grid;
+}
+
+.timer-wrapper h2 {
+    font-size: 150px;
+    align-self: center;
+}
+
+.show-lyrics span {
+    font-size: 22px;
+}
+
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: green;
+    animation: blinker 0.35s ease-in-out 3;
+}
+
+@keyframes blinker {
+
+    0%,
+    49% {
+        background-color: green;
+
+    }
+
+    50%,
+    100% {
+        background-color: rgb(0, 255, 0);
+    }
+}
+
+.final-answer {
+    background-color: yellow;
+    color: #000000;
+}
+
+.wrong {
+    background-color: red;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+
+    /*MAIN*/
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    /*MAIN END*/
+    /*WINNER*/
+    .winner {
+        padding: 20px 0;
+    }
+
+    .winner * {
+        font-size: 25px;
+    }
+
+    /*WINNER END*/
+
+    /*CONTROLS*/
+    .controls {
+        padding: 20px 0;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    #help-options .btn,
+    .timer-wrapper .btn {
+        padding: 10px 10px;
+        margin: 5px 10px;
+        font-size: 15px;
+    }
+
+    /*CONTROLS END*/
+
+    /*RULES*/
+    .rules-style {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .rules-style h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .rules-style li {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    /*RULES END*/
+
+    /*TABLE*/
+    .result-table-style {
+        padding: 10px 30px;
+    }
+
+    .table-item * {
+        font-size: 15px;
+    }
+
+    /*TABLE END*/
+
+    /*QUESTION AND ANSWERS*/
+
+    #question-type {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #help-options {
+        padding: 10px 0 10px 0;
+        display: grid;
+    }
+
+    #question {
+        font-size: 20px;
+    }
+
+    #answer-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    #answer-buttons button {
+        margin: 5px;
+    }
+    .timer-button-wrapper {
+        display: grid;
+    }
+
+    .timer-wrapper h2 {
+        font-size: 30px;
+        align-self: center;
+    }
+
+}

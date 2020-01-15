@@ -1,0 +1,121 @@
+<!-- Who Wants to Be a Millionaire?
+Created by Emils Bisenieks 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gribi būt milijonārs?</title>
+</head>
+
+<body id="body">
+    <div id="container-id" class="container">
+        <img src="img/logo.svg" id="logo" alt="Logo">
+        <div id="winner-text" class="winner hide">
+            <h1>TU ESI UZVARĒTĀJS!!!</h1>
+        </div>
+        <div id="question-container" class="question-container hide">
+            <div id="question-type"></div>
+            <div id="help-options" class="hide">
+                <button id="two-options" class="btn">50:50</button>
+                <button id="call-friend" class="btn">Piezvani draugam</button>
+                <button id="google-it" class="btn">Google</button>
+            </div>
+            <div id="question">Question</div>
+
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div id="rules" class="hide rules-style">
+            <h2>Noteikumi:</h2>
+            <ul>
+                <li>Spēles scenārijs: jātbild jautājumi no 1 līdz 15</li>
+                <li>Nepareizas atbildes gadījumā, spēle sākas no jauna</li>
+                <li>Spēlēt var vismaz 5 reizes (tik daudz jautājumi ir zem katras nodaļas)</li>
+                <li>Ir trīs papildiespējas: zvans draugam(30 sek), Māte Google(30 sek), 50/50</li>
+            </ul>
+        </div>
+        <div id="controls-wrapper" class="controls">
+            <button id="rules-btn" class="btn">Noteikumi</button>
+            <button id="start-btn" class="btn hide">Sākt spēli</button>
+            <button id="next-btn" class="btn hide">Nākošais jautājums</button>
+            <button id="repeat-btn" class="btn hide">Spēlēt vēlreiz?!</button>
+        </div>
+
+        <div id="result-table" class="hide result-table-style">
+            <div id="questions-table">
+                <div class="table-item">
+                    <p class="highlight-prize">15</p>
+                    <p class="highlight-prize">1000000 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>14</p>
+                    <p>10000 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>13</p>
+                    <p>5000 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>12</p>
+                    <p>2500 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>11</p>
+                    <p>1250 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p class="highlight-prize">10</p>
+                    <p class="highlight-prize">500 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>9</p>
+                    <p>250 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>8</p>
+                    <p>125 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>7</p>
+                    <p>80 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>6</p>
+                    <p>60 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p class="highlight-prize">5</p>
+                    <p class="highlight-prize">50 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>4</p>
+                    <p>40 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>3</p>
+                    <p>30 EUR</p>
+                </div>
+                <div class="table-item">
+                    <p>2</p>
+                    <p>20 EUR</p>
+                </div>
+                <div class="table-item current-question">
+                    <p class="highlight-prize">1</p>
+                    <p class="highlight-prize">10 EUR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
