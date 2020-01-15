@@ -49,8 +49,8 @@ const twoOptionsSound = new Audio("sound/50_50_sound.mp3");
 
 
 
-letsPlaySound.play();
-after1QuestionSound.play();
+// letsPlaySound.play();
+// after1QuestionSound.play();
 
 //Pause background sound
 function pauseQuestionSounds() {
