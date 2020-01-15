@@ -32,6 +32,7 @@ fetch("js/questions.json").then(response => response.json()).then(data => {
         questions.push(data[i]);
     }
 });
+console.log(questions);
 
 
 
@@ -126,6 +127,8 @@ function startGame(e) {
             questionSectionArray.push(questions[i]);
         }
     };
+    
+    console.log(questionSectionArray);
 
     shuffledQuestions = questionSectionArray.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
