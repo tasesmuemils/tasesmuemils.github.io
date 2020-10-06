@@ -1,0 +1,36 @@
+/*ACTOR CARD*/
+.actor-card {
+    background-color: #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.actor-card img {
+    width: 100%;
+    vertical-align: middle;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.actor-info {
+    background-color: #000000;
+    margin: 10px 0 20px 0;
+    color: white;
+    border-radius: 10px;
+}
+
+.actor-info h5 {
+    background-color: #000000;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px 0 0 0;
+}
+
+.actor-info h4 {
+    background-color: #000000;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*ACTOR CARD END*/

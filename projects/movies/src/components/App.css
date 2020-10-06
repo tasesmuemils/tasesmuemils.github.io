@@ -1,0 +1,26 @@
+/*FONT INPORTS*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+/*BASE STYLING*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #31414e;
+    font-family: "Montserrat", sans-serif;
+}
+
+*:focus {
+    outline: 0;
+    outline: none;
+}
+
+/*BASE STYLING END*/

@@ -1,0 +1,31 @@
+/*ACTORS LIST*/
+
+.actors-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/*ACTORS LIST END*/
+
+/*RESPONSIVE DESIGN*/
+
+@media only screen and (max-width: 1024px) {
+    /*ACTORS LIST*/
+    .actors-list {
+        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*ACTORS LIST END*/
+}
+
+@media only screen and (max-width: 700px) {
+    /*ACTORS LIST*/
+    .actors-list {
+        grid-template-columns: 200px;
+        justify-content: center;
+    }
+    /*ACTORS LIST END*/
+}
+
+/*RESPONSIVE DESIGN END*/
