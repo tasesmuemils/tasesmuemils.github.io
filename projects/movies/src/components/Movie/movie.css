@@ -1,0 +1,49 @@
+/*FONT IMPORTS*/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+/*MOVIE CARD*/
+.movie-card {
+    position: relative;
+    justify-content: center;
+    display: grid;
+    margin: 25px;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.link-style {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.movie-card img {
+    width: 200px;
+    height: 305px;
+    margin-bottom: 15px;
+    background-color: #000000;
+}
+
+.movie-card h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.movie-img-wrapper {
+    position: relative;
+}
+
+.movie-img-wrapper h4 {
+    background-color: rgb(248, 185, 67);
+    position: absolute;
+    width: 40px;
+    top: 93%;
+    left: 85%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+/*MOVIE CARD END*/

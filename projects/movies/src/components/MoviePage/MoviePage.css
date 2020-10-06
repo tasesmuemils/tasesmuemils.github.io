@@ -1,0 +1,170 @@
+/*PAGE AND MOVIE DETAIL*/
+.movie-page {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.arrow-back {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    transition: all 0.3s;
+}
+
+.arrow-back:hover {
+    cursor: pointer;
+    transform: translateX(-5px);
+}
+
+.movie-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 50px;
+    margin-left: 7em;
+    margin-right: 7em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+
+.movie-page-poster img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.movie-numbers {
+    display: flex;
+    padding: 5px 0 10px;
+}
+
+.movie-numbers h4 {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.movie-detail-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.movie-detail-text,
+.movie-detail-text * {
+    background-color: #000000;
+}
+
+.movie-detail-text h1 {
+    padding: 10px;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.movie-detail-text p {
+    padding-left: 10px;
+    line-height: 25px;
+}
+/*PAGE AND MOVIE DETAIL END*/
+
+/*TRAILER*/
+
+.movie-trailer iframe {
+    width: 50%;
+    height: 300px;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    margin: 20px 0 70px 0;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+
+/*TRAILER END*/
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 1024px) {
+    /*PAGE AND MOVIE DETAIL*/
+    .movie-numbers {
+        display: grid;
+    }
+
+    .arrow-back {
+        font-size: 30px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .movie-numbers h4 {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .movie-details {
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+        margin-left: 3em;
+        margin-right: 3em;
+        border-radius: 0;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.55);
+    }
+
+    .movie-page-poster img {
+        border-radius: 10px;
+        margin-bottom: 60px;
+        width: 300px;
+        box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    }
+
+    .movie-detail-text {
+        display: flex;
+        box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    }
+
+    .movie-detail-text h1 {
+        padding: 5px;
+        font-size: 30px;
+    }
+
+    .movie-detail-text p {
+        line-height: 22px;
+    }
+    /*PAGE AND MOVIE DETAIL END*/
+
+    /*TRAILER*/
+    .movie-trailer iframe {
+        width: 70%;
+    }
+    /*TRAILER END*/
+}
+
+@media only screen and (max-width: 700px) {
+    /*PAGE AND MOVIE DETAIL*/
+    .movie-details {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .arrow-back {
+        font-size: 30px;
+        top: 10px;
+        left: 10px;
+    }
+    /*PAGE AND MOVIE DETAIL END*/
+
+    /*TRAILER*/
+    .movie-trailer iframe {
+        width: 90%;
+    }
+    /*TRAILER END*/
+}
+
+/*RESPONSIVE DESIGN END*/

@@ -1,0 +1,32 @@
+/*MOVIE LIST*/
+.list-container {
+    padding: 20px 100px;
+}
+
+.loader-style {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.list-container h2 {
+    color: white;
+}
+/*MOVIE LIST*/
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 660px) {
+    /*MOVIE LIST*/
+    .list-container {
+        padding: 0 50px;
+    }
+
+    .list-container:nth-child(1) {
+        padding-top: 100px;
+    }
+
+    .list-container h2 {
+        text-align: center;
+    }
+    /*MOVIE LIST*/
+}
+/*RESPONSIVE*/
