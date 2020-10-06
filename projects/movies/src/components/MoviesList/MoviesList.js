@@ -12,7 +12,7 @@ class MoviesList extends React.Component {
             const imageUrl = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
 
             return (
-                <div>
+                <div key={movie.id}>
                     <Movie
                         title={movie.title}
                         image={imageUrl}
